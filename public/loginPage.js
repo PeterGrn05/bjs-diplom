@@ -3,7 +3,7 @@
 const userForm = new UserForm();
 
 userForm.loginFormCallback = (data) => {
-    ApiConnector.register(data, (response) => {
+    ApiConnector.login(data, (response) => {
         console.log(response);
         if (response.success) {
             location.reload();
